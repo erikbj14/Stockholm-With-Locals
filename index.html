@@ -1,1 +1,341 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Stockholm with Erik and Raj. Relaxed, personal experiences with two locals.">
+  <title>Stockholm With Locals | Your Stockholm Experience</title>
+
+  <style>
+    * { box-sizing: border-box; }
+
+    :root {
+      --navy: #18334a;
+      --gold: #b28a50;
+      --cream: #f8f5ef;
+      --text: #29343b;
+      --muted: #657078;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: #fff;
+      line-height: 1.65;
+    }
+
+    .hero {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 54px 20px 46px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: clamp(2.1rem, 6vw, 3.6rem);
+      letter-spacing: 1px;
+      line-height: 1.15;
+    }
+
+    .tagline {
+      margin: 14px 0 0;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: clamp(1rem, 3vw, 1.3rem);
+    }
+
+    .gold-line {
+      width: 65px;
+      height: 3px;
+      background: var(--gold);
+      margin: 24px auto 0;
+    }
+
+    main {
+      width: min(100% - 36px, 960px);
+      margin: 0 auto;
+    }
+
+    section { padding: 42px 0; }
+
+    h2 {
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: clamp(1.6rem, 4vw, 2.1rem);
+      text-align: center;
+      margin: 0 0 22px;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .hosts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+      max-width: 620px;
+      margin: 0 auto 30px;
+    }
+
+    .host { text-align: center; }
+
+    .host img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 12px;
+      background: var(--cream);
+    }
+
+    .host h3 {
+      margin: 12px 0 0;
+      color: var(--navy);
+      font-family: Georgia, serif;
+      font-size: 1.25rem;
+    }
+
+    .qualities {
+      margin-top: 30px;
+      padding: 20px 16px;
+      text-align: center;
+      background: var(--cream);
+      color: var(--navy);
+      border-radius: 10px;
+      font-weight: bold;
+      letter-spacing: .5px;
+    }
+
+    .qualities small {
+      display: block;
+      margin-top: 8px;
+      font-weight: normal;
+      color: var(--muted);
+      letter-spacing: 0;
+    }
+
+    .experiences { background: var(--cream); }
+
+    .experience-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .experience {
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      border-top: 3px solid var(--gold);
+    }
+
+    .experience h3 {
+      color: var(--navy);
+      font-family: Georgia, serif;
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    .experience p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .96rem;
+    }
+
+    .custom {
+      text-align: center;
+      margin: 24px auto 0;
+      max-width: 650px;
+    }
+
+    .languages {
+      text-align: center;
+      color: var(--navy);
+      font-weight: bold;
+      letter-spacing: .4px;
+    }
+
+    .contact {
+      text-align: center;
+      background: var(--navy);
+      color: white;
+      padding: 42px 22px;
+      border-radius: 12px;
+      margin: 0 0 40px;
+    }
+
+    .contact h2 { color: white; }
+
+    .contact a {
+      color: white;
+      text-decoration: underline;
+      text-decoration-color: var(--gold);
+      text-underline-offset: 4px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact p { margin: 10px 0; }
+
+    .contact-button {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 24px;
+      border-radius: 30px;
+      background: var(--gold);
+      color: #fff !important;
+      text-decoration: none !important;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: .85rem;
+      padding: 0 20px 26px;
+    }
+
+    @media (max-width: 600px) {
+      .hero { padding: 40px 18px 34px; }
+      main { width: min(100% - 28px, 960px); }
+      section { padding: 32px 0; }
+      .hosts { gap: 14px; }
+      .host h3 { font-size: 1.05rem; }
+      .experience-list { grid-template-columns: 1fr; }
+      .experience { padding: 18px; }
+      .qualities { font-size: .9rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <h1>Stockholm With Locals</h1>
+    <p class="tagline">Two locals. Our Stockholm. Your experience.</p>
+    <div class="gold-line"></div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Meet Erik &amp; Raj</h2>
+
+      <div class="hosts">
+        <article class="host">
+          <img src="erik.jpg" alt="Erik, your local Stockholm host">
+          <h3>Erik</h3>
+        </article>
+
+        <article class="host">
+          <img src="raj.jpg" alt="Raj, your local Stockholm host">
+          <h3>Raj</h3>
+        </article>
+      </div>
+
+      <div class="intro">
+        <p>
+          We are two friends, born and raised in Stockholm and its
+          surroundings, with a lifelong connection to the city. We know
+          Stockholm not only from maps and guidebooks, but from growing
+          up, working and living here.
+        </p>
+
+        <p>
+          We offer relaxed and personal Stockholm experiences for visitors
+          who would like to discover more than the usual tourist route.
+          There is no rigid script. We show you places we genuinely like,
+          share stories and local perspectives, and adapt the experience
+          to your interests and pace.
+        </p>
+      </div>
+
+      <div class="qualities">
+        PERSONAL · INFORMAL · FLEXIBLE · LOCAL
+        <small>History · Culture · Music · Local life · Neighbourhoods · Conversation</small>
+      </div>
+    </section>
+
+    <section class="experiences">
+      <h2>A Few Ideas for Your Stockholm Experience</h2>
+
+      <div class="experience-list">
+        <article class="experience">
+          <h3>Bellman's Stockholm</h3>
+          <p>Old town lanes, tavern stories, music and the colourful world of 18th-century Stockholm.</p>
+        </article>
+
+        <article class="experience">
+          <h3>Royal Stockholm</h3>
+          <p>Royal history, beautiful surroundings and stories of the people and power behind the city.</p>
+        </article>
+
+        <article class="experience">
+          <h3>Stockholm Underground</h3>
+          <p>Discover the famous subway art and the city above it, with local insights along the way.</p>
+        </article>
+
+        <article class="experience">
+          <h3>Djursholm &amp; Stockholm Life</h3>
+          <p>Elegant neighbourhoods, beautiful homes, waterfront scenery and a relaxed local café stop.</p>
+        </article>
+
+        <article class="experience">
+          <h3>Drottningholm &amp; Ekerö</h3>
+          <p>A personal outing to royal surroundings, lakeside scenery and the quieter side of Stockholm.</p>
+        </article>
+      </div>
+
+      <p class="custom">
+        Or let us create a personal combination around your interests,
+        available time and preferred pace.
+      </p>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <p class="languages">Swedish · English · French · Spanish</p>
+    </section>
+
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <p>Planning a visit to Stockholm? We'd love to hear from you.</p>
+
+      <p>
+        Erik:
+        <a href="tel:+46709797390">+46 709 797 390</a>
+      </p>
+
+      <p>
+        Raj:
+        <a href="tel:+46709812589">+46 70 98 12 589</a>
+      </p>
+
+      <p>
+        <a href="mailto:erikbj14@gmail.com">erikbj14@gmail.com</a>
+      </p>
+
+      <p>
+        <a href="mailto:rajsiddiqee@hotmail.com">rajsiddiqee@hotmail.com</a>
+      </p>
+
+      <a class="contact-button"
+         href="mailto:erikbj14@gmail.com?subject=Stockholm%20With%20Locals">
+        Contact Us
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    Stockholm With Locals · Private Stockholm Experiences
+    <br>
+    Discover Stockholm with people who call it home.
+  </footer>
+</body>
+</html>
+
