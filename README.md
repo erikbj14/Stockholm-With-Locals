@@ -1,4 +1,4 @@
-tockholm With Locals
+Stockholm With Locals
 
 Two locals. Our Stockholm. Your experience.
 
